@@ -71,6 +71,14 @@ body {
  color: white;
 }
 
+input:active,
+input:focus,
+button:focus {
+ outline: 0px !important;
+
+ box-shadow: none !important;
+}
+
 .card_info {
  position: absolute;
  bottom: 15px;
