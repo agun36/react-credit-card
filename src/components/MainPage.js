@@ -86,6 +86,8 @@ const MainPage = () => {
       errors.cvcnumber = 'cant be empty'
     } else if (isNaN(values.cvcnumber)) {
       errors.cvcnumber = 'cvc is not a number'
+    } else if (values.cvcnumber.length !== 3) {
+      errors.cvcnumber = 'cvc is not a number'
     } else {
       success.cvcnumber = 'success'
     }
