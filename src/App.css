@@ -71,11 +71,14 @@ body {
  color: white;
 }
 
+
 input:active,
+input:hover,
 input:focus,
 button:focus {
- outline: 0px !important;
-
+ outline: none !important;
+ -webkit-appearance: none;
+ /* border: none !important; */
  box-shadow: none !important;
 }
 
