@@ -73,6 +73,8 @@ const MainPage = () => {
     //Month field
     if (!values.monthnumber) {
       errors.monthnumber = 'cant be empty'
+    } else if (isNaN(values.monthnumber)) {
+      errors.monthnumber = 'month is not a number'
     } else if (values.monthnumber.length !== 2) {
       errors.monthnumber = 'month is too long'
     } else {
@@ -81,6 +83,8 @@ const MainPage = () => {
     //year field
     if (!values.yearnumber) {
       errors.yearnumber = 'cant be empty'
+    } else if (isNaN(values.yearnumber)) {
+      errors.yearnumber = 'year is not a number'
     } else if (values.yearnumber.length !== 2) {
       errors.yearnumber = 'year is too long'
     } else {
