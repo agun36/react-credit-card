@@ -77,7 +77,6 @@ input:hover,
 input:focus,
 button:focus {
  outline: none !important;
- -webkit-appearance: none;
  /* border: none !important; */
  box-shadow: none !important;
 }
