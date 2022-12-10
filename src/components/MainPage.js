@@ -73,12 +73,16 @@ const MainPage = () => {
     //Month field
     if (!values.monthnumber) {
       errors.monthnumber = 'cant be empty'
+    } else if (values.monthnumber.length !== 2) {
+      errors.monthnumber = 'cvc is too long'
     } else {
       success.monthnumber = 'success'
     }
     //year field
     if (!values.yearnumber) {
       errors.yearnumber = 'cant be empty'
+    } else if (values.yearnumber.length !== 2) {
+      errors.yearnumber = 'year is too long'
     } else {
       success.yearnumber = 'success'
     }
@@ -87,7 +91,7 @@ const MainPage = () => {
     } else if (isNaN(values.cvcnumber)) {
       errors.cvcnumber = 'cvc is not a number'
     } else if (values.cvcnumber.length !== 3) {
-      errors.cvcnumber = 'cvc is not a number'
+      errors.cvcnumber = 'cvc is too long'
     } else {
       success.cvcnumber = 'success'
     }
