@@ -29,19 +29,6 @@ const MainPage = () => {
   const [showMessage, setShowMessage] = useState(false)
 
   const handleChange = (event) => {
-    // if (name === 'monthnumber')
-    //   event.target.value = value
-    //     .toString()
-    //     .replace(/[^0-9]/g, '')
-    //     .substring(0, 2)
-    // if (name === 'monthnumber' && value > 12) event.target.value = '12'
-    // if (name === 'yearnumber')
-    //   event.target.value = value
-    //     .toString()
-    //     .replace(/[^0-9]/g, '')
-    //     .substring(0, 2)
-
-    // if (name === 'cvc') event.target.value = value.substring(0, 4)
     setValues((values) => ({
       ...values,
       [event.target.name]: event.target.value,
