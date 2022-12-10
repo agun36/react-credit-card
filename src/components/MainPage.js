@@ -74,7 +74,7 @@ const MainPage = () => {
     if (!values.monthnumber) {
       errors.monthnumber = 'cant be empty'
     } else if (values.monthnumber.length !== 2) {
-      errors.monthnumber = 'cvc is too long'
+      errors.monthnumber = 'month is too long'
     } else {
       success.monthnumber = 'success'
     }
